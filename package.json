@@ -1,5 +1,5 @@
 {
-  "name": "hyper-db",
+  "name": "cwkdb",
   "version": "1.0.0",
   "description": "Advanced database system with multi-database support, caching, encryption, and schema validation.",
   "main": "src/index.js",
