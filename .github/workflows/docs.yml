@@ -1,0 +1,48 @@
+name: Deploy Documentation to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: # Allow manual deployment
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout repository
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Setup Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # Install dependencies (if docs need building)
+      - name: Install dependencies
+        run: npm install
+
+      # Build documentation (optional)
+      - name: Build documentation
+        run: npm run docs:build --if-present
+
+      # Setup GitHub Pages
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v3
+
+      # Upload documentation to GitHub Pages
+      - name: Upload documentation
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: docs # Deploy the docs/ directory
+
+      # Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v2
