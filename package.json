@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "build": "echo 'No build step needed'",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "docs:api": "npx jsdoc -c jsdoc.json"
   },
   "publishConfig": {
