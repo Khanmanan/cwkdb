@@ -177,5 +177,5 @@ Contributions are welcome! Feel free to submit a pull request or open an issue.
 This project is licensed under the [MIT License](LICENSE).
 
 
-I've updated the README to use javascript instead of js so the code blocks are easily copyable. Let me know if you need more adjustments!
+
 
