@@ -1,4 +1,4 @@
-# 🚀 **Advanced Database System**  
+# 🚀 **Hyper Database System**  
 An advanced and easy-to-use database system for Node.js with multi-database support, caching, encryption, and schema validation.
 
 ---
@@ -17,7 +17,7 @@ An advanced and easy-to-use database system for Node.js with multi-database supp
 
 ## 📦 **Installation**  
 ```bash
-npm install advanced-db
+npm install hyper-db
 ```
 
 ---
@@ -26,7 +26,7 @@ npm install advanced-db
 
 ### 🔗 **Connecting to a Database**  
 ```javascript
-const db = require('advanced-db');
+const db = require('hyper-db');
 
 // Connect to SQLite
 await db.connect('sqlite://database.sqlite');
@@ -175,7 +175,5 @@ Contributions are welcome! Feel free to submit a pull request or open an issue.
 
 ## 📜 **License**  
 This project is licensed under the [MIT License](LICENSE).
-
-
 
 
