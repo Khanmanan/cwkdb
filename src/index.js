@@ -1,7 +1,7 @@
 /**
  * Connects to the database.
- * @param {string} url - The database URL.
- * @returns {Promise<void>} Resolves when connected.
+ * @param {string} url - The database URL.  
+ * @returns {Promise<void>} Resolves when connected.         
  */
 async function connect(url) {
   // Connection logic
