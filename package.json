@@ -1,0 +1,17 @@
+{
+  "name": "advanced-db",
+  "version": "1.0.0",
+  "description": "Advanced database system with multi-database support, caching, encryption, and schema validation.",
+  "main": "src/index.js",
+  "files": ["src"],
+  "scripts": {
+    "build": "echo 'No build step needed'",
+    "test": "jest",
+    "docs:api": "npx jsdoc -c jsdoc.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "Khanmanan",
+  "license": "MIT"
+}
