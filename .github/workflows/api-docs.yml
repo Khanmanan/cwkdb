@@ -1,0 +1,31 @@
+name: Generate API Documentation
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install dependencies
+        run: npm install
+      - name: Generate API documentation
+        run: npx jsdoc -c jsdoc.json
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v3
+      - name: Upload API documentation
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: docs/api
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v2
