@@ -1,4 +1,4 @@
-# 🚀 **Hyper Database System**  
+# 🚀 **CWK DB**  
 An advanced and easy-to-use database system for Node.js with multi-database support, caching, encryption, and schema validation.
 
 ---
@@ -17,7 +17,7 @@ An advanced and easy-to-use database system for Node.js with multi-database supp
 
 ## 📦 **Installation**  
 ```bash
-npm install hyper-db
+npm install cwk-db
 ```
 
 ---
@@ -26,7 +26,7 @@ npm install hyper-db
 
 ### 🔗 **Connecting to a Database**  
 ```javascript
-const db = require('hyper-db');
+const db = require('cwk-db');
 
 // Connect to SQLite
 await db.connect('sqlite://database.sqlite');
