@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Advanced database system with multi-database support, caching, encryption, and schema validation.",
   "main": "src/index.js",
-  "files": ["src"],
+  "files": [
+    "src"
+  ],
   "scripts": {
     "build": "echo 'No build step needed'",
     "test": "jest",
@@ -13,5 +15,8 @@
     "access": "public"
   },
   "author": "Khanmanan",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
 }
