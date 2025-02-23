@@ -1,6 +1,6 @@
 {
   "name": "cwk-db",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Advanced database system with multi-database support, caching, encryption, and schema validation.",
   "main": "src/index.js",
   "files": [
